@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Project ID"
+            android:textStyle="bold"
+            />
+    <TextView
+            android:id="@+id/projId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Project ID"
+            android:paddingBottom="10dp"
+            />
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="API key"
+            android:textStyle="bold"
+            />
+    <TextView
+            android:id="@+id/apiKey"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="API key"
+            android:paddingBottom="10dp"
+            />
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration ID"
+            android:textStyle="bold"
+            />
+    <TextView
+            android:id="@+id/regId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:paddingBottom="10dp"
+            />
+    <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            />
+</LinearLayout>
