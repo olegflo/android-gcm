@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.olegflo.gcm.generator"
+          package="com.olegflo.gcm.receiver"
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="8"/>
@@ -8,8 +8,8 @@
     <!-- You can find detailed instructions how to setup manifest at http://developer.android.com/guide/google/gcm/gs.html -->
 
     <!--1 Declare and use a custom permission so only this application can receive GCM messages -->
-    <permission android:name="com.olegflo.gcm.generator.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
-    <uses-permission android:name="com.olegflo.gcm.generator.permission.C2D_MESSAGE"/>
+    <permission android:name="com.olegflo.gcm.receiver.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.olegflo.gcm.receiver.permission.C2D_MESSAGE"/>
     <!-- /1-->
 
     <!-- 2 Add permissions -->
@@ -23,7 +23,10 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <!-- / 2-->
 
-    <application android:label="@string/app_name">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon">
         <activity android:name="MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -38,7 +41,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="com.olegflo.gcm.generator"/>
+                <category android:name="com.olegflo.gcm.receiver"/>
             </intent-filter>
         </receiver>
         <!-- /3 -->

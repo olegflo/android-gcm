@@ -48,6 +48,23 @@
             android:id="@+id/share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Share"
+            android:text="Share all stuff"
             />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pushes"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            />
+
+    <ListView
+            android:id="@+id/messages"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+
 </LinearLayout>
